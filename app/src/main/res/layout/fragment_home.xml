@@ -13,10 +13,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editTextHome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
@@ -31,27 +32,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="6dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="Bienvenido"
-                android:textColor="@color/white"
-                android:textSize="35sp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="50dp" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="¿Qué deseas hacer?"
-                android:textColor="@color/white"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="97dp" />
             <!--
              <androidx.recyclerview.widget.RecyclerView
                   android:id="@+id/home_hor_rec"
@@ -75,18 +55,7 @@
                 tools:layout_editor_absoluteY="501dp" />
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="Componentes destacados"
-                android:textColor="@color/gray"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="228dp" />
-
-            <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
@@ -119,7 +88,7 @@
                 tools:layout_editor_absoluteY="630dp" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView01"
                 android:layout_width="80dp"
                 android:layout_height="68dp"
                 android:src="@drawable/ic_baseline_computer_24"
@@ -127,7 +96,7 @@
                 tools:layout_editor_absoluteY="145dp" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageView05"
                 android:layout_width="80dp"
                 android:layout_height="68dp"
                 android:src="@drawable/ic_baseline_computer_24"
@@ -135,7 +104,7 @@
                 tools:layout_editor_absoluteY="145dp" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageView06"
                 android:layout_width="80dp"
                 android:layout_height="68dp"
                 android:src="@drawable/ic_baseline_computer_24"
@@ -143,7 +112,7 @@
                 tools:layout_editor_absoluteY="145dp" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageView04"
                 android:layout_width="80dp"
                 android:layout_height="68dp"
                 android:src="@drawable/ic_baseline_computer_24"
@@ -207,10 +176,43 @@
                 android:layout_height="50dp"
                 android:backgroundTint="@color/green"
                 android:text="Tendencia de precios"
-                android:textSize="12sp"
+                android:textSize="11sp"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="213dp"
                 tools:layout_editor_absoluteY="318dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="¿Qué deseas hacer?"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Bienvenido"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Componentes destacados"
+                android:textColor="@color/gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="221dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -231,27 +233,6 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="6dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:text="Bienvenido"
-            android:textColor="@color/white"
-            android:textSize="35sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="50dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:text="¿Qué deseas hacer?"
-            android:textColor="@color/white"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="97dp" />
         <!--
              <androidx.recyclerview.widget.RecyclerView
                   android:id="@+id/home_hor_rec"
@@ -263,17 +244,6 @@
                   tools:ignore="MissingConstraints" />
         -->
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:text="Componentes destacados"
-            android:textColor="@color/gray"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="228dp" />
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="80dp"
@@ -283,7 +253,7 @@
             tools:layout_editor_absoluteY="145dp" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView085"
             android:layout_width="80dp"
             android:layout_height="68dp"
             android:src="@drawable/ic_baseline_computer_24"
@@ -291,7 +261,7 @@
             tools:layout_editor_absoluteY="145dp" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageView96"
             android:layout_width="80dp"
             android:layout_height="68dp"
             android:src="@drawable/ic_baseline_computer_24"
@@ -299,7 +269,7 @@
             tools:layout_editor_absoluteY="145dp" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView984"
             android:layout_width="80dp"
             android:layout_height="68dp"
             android:src="@drawable/ic_baseline_computer_24"

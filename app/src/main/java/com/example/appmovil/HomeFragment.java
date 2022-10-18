@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
+        //homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
 
         homeHorModelList = new ArrayList<>();
 
