@@ -71,8 +71,8 @@
                 android:text="Construccion destacada"
                 android:textColor="@color/white"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="25dp"
-                tools:layout_editor_absoluteY="456dp" />
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="501dp" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -94,7 +94,7 @@
                 android:textColor="@color/gray"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="513dp" />
+                tools:layout_editor_absoluteY="565dp" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -105,7 +105,7 @@
                 android:textColor="@color/gray"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="540dp" />
+                tools:layout_editor_absoluteY="598dp" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -116,50 +116,7 @@
                 android:textColor="@color/gray"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="568dp" />
-
-            <Button
-                android:layout_width="162dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/green"
-                android:text="Crear lista"
-                android:textSize="12sp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="25dp"
-                tools:layout_editor_absoluteY="292dp" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="162dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/green"
-                android:text="Guias de armado"
-                android:textSize="12sp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="25dp"
-                tools:layout_editor_absoluteY="361dp" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="162dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/green"
-                android:text="Tendencia de precios"
-                android:textSize="12sp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="213dp"
-                tools:layout_editor_absoluteY="292dp" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="162dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/green"
-                android:text="Listas creadas"
-                android:textSize="12sp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="213dp"
-                tools:layout_editor_absoluteY="361dp" />
+                tools:layout_editor_absoluteY="630dp" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -198,8 +155,62 @@
                 android:layout_width="219dp"
                 android:layout_height="188dp"
                 android:src="@drawable/_06345_9eb507c8b9468fe52839dcc160613131_1600"
-                tools:layout_editor_absoluteX="186dp"
-                tools:layout_editor_absoluteY="456dp" />
+                tools:layout_editor_absoluteX="187dp"
+                tools:layout_editor_absoluteY="513dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="ASROCK B550m"
+                android:textColor="@color/gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="533dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Guias de armado"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="395dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Listas creadas"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="212dp"
+                tools:layout_editor_absoluteY="395dp" />
+
+            <Button
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Crear lista"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="318dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Tendencia de precios"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="318dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -253,17 +264,6 @@
         -->
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:text="Construccion destacada"
-            android:textColor="@color/white"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="456dp" />
-
-        <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -273,62 +273,6 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="228dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:text="ASROCK B550m"
-            android:textColor="@color/gray"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="487dp" />
-
-        <Button
-            android:layout_width="162dp"
-            android:layout_height="50dp"
-            android:text="Crear lista"
-            android:textSize="12sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="292dp"
-            android:backgroundTint="@color/green"
-            />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="162dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/green"
-            android:text="Guias de armado"
-            android:textSize="12sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="361dp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="162dp"
-            android:layout_height="50dp"
-            android:text="Tendencia de precios"
-            android:textSize="12sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="213dp"
-            tools:layout_editor_absoluteY="292dp"
-            android:backgroundTint="@color/green"
-            />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="162dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/green"
-            android:text="Listas creadas"
-            android:textSize="12sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="213dp"
-            tools:layout_editor_absoluteY="361dp" />
 
         <ImageView
             android:id="@+id/imageView"
