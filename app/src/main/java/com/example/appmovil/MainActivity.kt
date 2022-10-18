@@ -1,5 +1,6 @@
 package com.example.appmovil
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -35,18 +37,28 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_item_one -> Toast.makeText(this, "Item 1", Toast.LENGTH_LONG).show()
-            R.id.nav_item_two -> Toast.makeText(this, "Item 2", Toast.LENGTH_LONG).show()
+            R.id.nav_item_one -> replaceFragment(HomeFragment(), "Inicio")
+            R.id.nav_item_two -> replaceFragment(Profile(), "Mi Perfil")
             R.id.nav_item_three -> Toast.makeText(this, "Item 3", Toast.LENGTH_LONG).show()
         }
 
         drawer.closeDrawer(GravityCompat.START)
         return true
     }
+
+    private fun replaceFragment(fragment: Fragment, title: String){
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frameLayout,fragment)
+        fragmentTransaction.commit()
+    }
+
+
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
