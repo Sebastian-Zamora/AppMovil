@@ -1,20 +1,368 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mediumGray"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:textSize="20dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        android:text="Inicio"
-        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</FrameLayout>
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="9dp"
+                android:hint="Buscar componentes"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Bienvenido"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="¿Qué deseas hacer?"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="97dp" />
+            <!--
+             <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/home_hor_rec"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="6dp"
+                  tools:layout_editor_absoluteX="0dp"
+                  tools:layout_editor_absoluteY="127dp"
+                  tools:ignore="MissingConstraints" />
+        -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Construccion destacada"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="456dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Componentes destacados"
+                android:textColor="@color/gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="228dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="RTX 3090"
+                android:textColor="@color/gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="513dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Ryzen 9 5900x"
+                android:textColor="@color/gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="540dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="32GB ram DDR4"
+                android:textColor="@color/gray"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="568dp" />
+
+            <Button
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Crear lista"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="292dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Guias de armado"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Tendencia de precios"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="292dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Listas creadas"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="68dp"
+                android:src="@drawable/ic_baseline_computer_24"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="68dp"
+                android:src="@drawable/ic_baseline_computer_24"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="80dp"
+                android:layout_height="68dp"
+                android:src="@drawable/ic_baseline_computer_24"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="68dp"
+                android:src="@drawable/ic_baseline_computer_24"
+                tools:layout_editor_absoluteX="315dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="219dp"
+                android:layout_height="188dp"
+                android:src="@drawable/_06345_9eb507c8b9468fe52839dcc160613131_1600"
+                tools:layout_editor_absoluteX="186dp"
+                tools:layout_editor_absoluteY="456dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawablePadding="9dp"
+            android:hint="Buscar componentes"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Bienvenido"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="¿Qué deseas hacer?"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="97dp" />
+        <!--
+             <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/home_hor_rec"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="6dp"
+                  tools:layout_editor_absoluteX="0dp"
+                  tools:layout_editor_absoluteY="127dp"
+                  tools:ignore="MissingConstraints" />
+        -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Construccion destacada"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="456dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Componentes destacados"
+            android:textColor="@color/gray"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="228dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="ASROCK B550m"
+            android:textColor="@color/gray"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="487dp" />
+
+        <Button
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:text="Crear lista"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="292dp"
+            android:backgroundTint="@color/green"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/green"
+            android:text="Guias de armado"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="361dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:text="Tendencia de precios"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="292dp"
+            android:backgroundTint="@color/green"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/green"
+            android:text="Listas creadas"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="361dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:src="@drawable/ic_baseline_computer_24"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:src="@drawable/ic_baseline_computer_24"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:src="@drawable/ic_baseline_computer_24"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:src="@drawable/ic_baseline_computer_24"
+            tools:layout_editor_absoluteX="315dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </androidx.core.widget.NestedScrollView>

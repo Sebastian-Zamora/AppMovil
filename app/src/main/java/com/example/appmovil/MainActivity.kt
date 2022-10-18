@@ -40,16 +40,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.nav_item_one -> replaceFragment(HomeFragment(), "Inicio")
             R.id.nav_item_two -> replaceFragment(Profile(), "Mi Perfil")
-            R.id.nav_item_three -> Toast.makeText(this, "Item 3", Toast.LENGTH_LONG).show()
+            R.id.nav_item_three -> replaceFragment(SettingsFragment(), "Configuraciones")
         }
 
         drawer.closeDrawer(GravityCompat.START)
         return true
     }
+
+
+
 
     private fun replaceFragment(fragment: Fragment, title: String){
         val fragmentManager = supportFragmentManager
